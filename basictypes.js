@@ -1,4 +1,4 @@
-/*String*/
+/*string*/
 var fullName = "Anand";
 var age = 32;
 var sentence = "My name is " + fullName + " .\nand my age is " + age + " and I am doing good";
@@ -23,7 +23,7 @@ tupleList[4] = 456;
 //will give error since [string|number] is allowed as per declaration type
 //tupleList=true;
 document.getElementById('basicTuple').innerHTML = tupleList.toString();
-/*ENUM*/
+/*enum*/
 var Color;
 (function (Color) {
     Color[Color["Red"] = 1] = "Red";
@@ -34,4 +34,21 @@ var Color;
 //let c: Color = Color.Green;
 var colorName = Color[2];
 alert(colorName);
+/*any*/
+var notSure = 4;
+notSure = 'what to do';
+notSure = true;
+notSure.ifItExists();
+notSure.toFixed();
+var mylist = ['den', true, 234];
+mylist[1] = 2345;
+/*void*/
+function hiiFun() {
+    console.log('samples');
+}
+var notuseable = undefined;
+/*Type Assertions*/
+var myVal = 'My name';
+var strMyLength = myVal.length;
+var strMyLength = myVal.length;
 //# sourceMappingURL=basictypes.js.map

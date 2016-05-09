@@ -1,4 +1,4 @@
-/*String*/
+/*string*/
 let fullName: string = `Anand`;
 let age: number = 32;
 let sentence: string = `My name is ${ fullName } .
@@ -22,6 +22,7 @@ for(var l in list)
 }
 
 /*Tuple array*/
+
 let tupleList: [string,number];
 tupleList =['Hurray',23];
 
@@ -34,12 +35,41 @@ tupleList[4]=456;
 document.getElementById('basicTuple').innerHTML = tupleList.toString();
 
 
-/*ENUM*/
+/*enum*/
+
 enum Color {Red=1,Green=2,Blue=4};
 //let c: Color = Color.Green;
 let colorName: string = Color[2];
 
 alert(colorName);
+
+/*any*/
+
+let notSure: any = 4;
+notSure  = 'what to do';
+notSure = true;
+
+notSure.ifItExists();
+notSure.toFixed();
+
+let mylist: any[]=['den',true,234];
+mylist[1]=2345;
+
+/*void*/
+function hiiFun() : void
+{
+    console.log('samples');
+}
+
+let notuseable: void = undefined;
+
+/*Type Assertions*/
+
+let myVal: any = 'My name';
+let strMyLength: number = (<string>myVal).length;
+
+let strMyLength: number = (myVal as string).length;
+
 
 
 
