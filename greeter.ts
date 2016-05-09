@@ -35,4 +35,4 @@ function greeter(person: Person)
 
 var user = new Student('anand','B','Krishnankutty');
 
-document.body.innerHTML = greeter(user);
+document.getElementById('greeter').innerHTML = greeter(user);
